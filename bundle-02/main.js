@@ -38,40 +38,41 @@ printColorsNumber();
 
 // ESERCIZIO 3
 // errore di logica e sintassi: dal momento che devo inserire un numero, dopo il prompt devo aggiungere il metodo parseInt
-// function addNumbers() {
-//     const userNumber = prompt(parseInt('Inserisci un numero'));
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = prompt(parseInt('Inserisci un numero'));
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 
 // ESERCIZIO 4
 // errore di sintassi e di logica: i valori booleani non hanno bisogno degli apici
 
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = false;
+    let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = true;
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
 
-// checkAccess();
+checkAccess();
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 //errore di sintassi: manca la chiusura della parentesi graffa dell'intera funzione
+//il valore booleano true aveva gli apici
 
 function checkAccessImproved() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
@@ -86,7 +87,7 @@ function checkAccessImproved() {
         if (userEmail.length > 5) {
             
             if (email === userEmail) {
-            grantAccess = 'true';                
+            grantAccess = true;                
             }
         
         }
