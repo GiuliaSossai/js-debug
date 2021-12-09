@@ -11,6 +11,12 @@
 
 
 // ESERCIZIO 1 (suggerimento: ci sono 6 errori)
+//1-2 errore di sintassi: mancava una virgola al penultimo oggetto e l'ultimo non aveva bisogno della virgola
+//3: nel primo array filtrato l'arrow funcition ha errore di sintassi >=
+//4 errore di sintassi: le arrow function devono avere il return quando ci sono le parentesi graffe (nel secondo filtro) - oppure se non ci sono le graffe scrivere return non è necessario
+//5 errore di logica: ad auto.type bisogna aggiungere il metodo toLowerCase() per poter comparare stringhe alle stesse condizioni
+//6 errore di logica: l'operatore del filtro finale è AND e non OR 
+
 const cars = [
     {
         manufacturer: 'Ford',
@@ -56,31 +62,32 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
         type: 'Benzina'
-    },
+    }
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
 const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
+    return auto.type.toLowerCase() === 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type.toLowerCase() !== 'benzina' && auto.type.toLowerCase() !== 'diesel';
 });
 
 console.log('Auto a benzina');
-console.log('*******************************');
 console.log(gasolineCars);
+console.log('*******************************');
 
 console.log('Auto a diesel');
-console.log('*******************************');
 console.log(dieselCars);
+console.log('*******************************');
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+console.log('*******************************');
