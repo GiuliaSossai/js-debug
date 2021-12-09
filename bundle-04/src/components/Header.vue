@@ -4,9 +4,10 @@
             <img src="../assets/img/spotify-logo.png" alt="Spotify" />
         </div>
         <div>
+            <!-- su @change c'è una 'e' di troppo: è changedGenre -->
             <select
                 v-model="genreFilter"
-                @change="$emit('changedGenere', genreFilter)"
+                @change="$emit('changedGenre', genreFilter)"
                 class="form-select mt-3"
             >
                 <option value="">Seleziona un genere</option>
@@ -15,7 +16,7 @@
                     :key="index"
                     :value="genre"
                 >
-                    {{ genres }}
+                    {{ genre }}
                     
                 </option>
             </select>
@@ -32,8 +33,8 @@
                     :key="index"
                     :value="author"
                 >
-                    {{ authors }}
-                    <!-- c'era scritto di nuovo genres -->
+                    {{ author }}
+                    <!-- c'era scritto di nuovo genres; bisogna mettere author -->
                 </option>
             </select>
 

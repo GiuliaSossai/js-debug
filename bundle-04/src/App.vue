@@ -33,7 +33,7 @@ export default {
         },
         startGenreSearch(genreToSearch) {
             console.log(genreToSearch);
-            genreToSearch = "";
+            //genreToSearch = "";
             this.genreToSearch = genreToSearch;
         },
         startAuthorSearch(authorToSearch) {

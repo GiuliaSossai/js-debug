@@ -15,7 +15,7 @@
 export default {
     name: "Disc",
     props: {
-        disc: Object,
+        disc: Object //disc è un oggetto non una stringa
     },
 };
 </script>

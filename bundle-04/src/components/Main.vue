@@ -46,7 +46,7 @@ export default {
         axios
             .get("https://flynn.boolean.careers/exercises/api/array/music")
             .then((res) => {
-                let discs = {};
+                //let discs = {}; non serve!
                 this.discs = res.data.response;
 
                 this.discs.forEach((disc) => {
