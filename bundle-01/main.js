@@ -69,7 +69,7 @@ loopToFive();
 // displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
 
 //è una funzione che a partire da un array di numeri restituisce l'array dei numeri pari presenti nell'array padre
-// 1-2: dentro ciclo for c'è un ; di troppo alla fine e i deve essere minore o uguale;
+// 1-2: dentro ciclo for c'è un ; di troppo alla fine e 'i' deve essere minore o uguale;
 // 3: dentro la condizione if ci deve essere un'uguaglianza
 // 4: il return va fuori dal ciclo for
 // 5-6: al push e nell'if non ci va i ma ci va numbers[i]

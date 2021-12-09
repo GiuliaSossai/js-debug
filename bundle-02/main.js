@@ -28,7 +28,7 @@ checkAge();
 
 
 // ESERCIZIO 2
-// errore di sintassi: lenght è scritto male
+// errore di sintassi: length è scritto male (lenght)
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
     console.log(`Nella mia palette ci sono ${colors.length} colori!`);
