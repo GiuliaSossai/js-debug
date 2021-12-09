@@ -46,12 +46,13 @@ export default {
         axios
             .get("https://flynn.boolean.careers/exercises/api/array/music")
             .then((res) => {
-                //let discs = {}; non serve!
+                //let discs = {}; non serve c'è già nei data!
                 this.discs = res.data.response;
 
                 this.discs.forEach((disc) => {
-                    if (!this.discs.includes(disc.genre)) {
+                    if (!this.genres.includes(disc.genre)) {
                         this.genres.push(disc.genre);
+                        //this.genres non this.discs dentro la condizione
                     }
                     
                     // discs è sbagliato perché la proprietà author è di disc non di discs
