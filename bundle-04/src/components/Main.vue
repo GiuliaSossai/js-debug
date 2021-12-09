@@ -21,7 +21,7 @@ export default {
     },
     props: {
         selectedGenre: String,
-        selectedAuthor: String,
+        selectedAuthor: String
     },
     computed: {
         filteredDiscs() {
@@ -39,7 +39,7 @@ export default {
         return {
             discs: [],
             genres: [],
-            authors: [],
+            authors: []
         };
     },
     created() {
@@ -53,8 +53,9 @@ export default {
                     if (!this.discs.includes(disc.genre)) {
                         this.genres.push(disc.genre);
                     }
-
-                    if (!this.authors.includes(discs.author)) {
+                    
+                    // discs è sbagliato perché la proprietà author è di disc non di discs
+                    if (!this.authors.includes(disc.author)) {
                         this.authors.push(disc.author);
                     }
                 });

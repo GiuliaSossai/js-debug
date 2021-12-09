@@ -15,7 +15,8 @@
                     :key="index"
                     :value="genre"
                 >
-                    {{ genre }}
+                    {{ genres }}
+                    
                 </option>
             </select>
         </div>
@@ -31,7 +32,8 @@
                     :key="index"
                     :value="author"
                 >
-                    {{ genre }}
+                    {{ authors }}
+                    <!-- c'era scritto di nuovo genres -->
                 </option>
             </select>
 

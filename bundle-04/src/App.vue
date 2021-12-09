@@ -1,6 +1,7 @@
 <template>
+    <!-- @changedAuthor aveva una a di troppo -->
     <div id="app">
-        <Header :genres="genresList" :authors="authorsList" @changedGenre="startGenreSearch" @chaangedAuthor="startAuthorSearch" />
+        <Header :genres="genresList" :authors="authorsList" @changedGenre="startGenreSearch" @changedAuthor="startAuthorSearch" />
 
         <Main :selectedGenre="genreToSearch" :selectedAuthor="authorToSearch" @genresAndAuthorsReady="getGenresAndAuthorsList" />
     </div>
@@ -26,7 +27,7 @@ export default {
     },
     methods: {
         getGenresAndAuthorsList(allGenresAndAuthors) {
-            allGenresAndAuthors = {};
+            //allGenresAndAuthors = {};
             this.genresList = allGenresAndAuthors.genres;
             this.authorsList = allGenresAndAuthors.authors;
         },
