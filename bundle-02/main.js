@@ -39,7 +39,7 @@ printColorsNumber();
 // ESERCIZIO 3
 // errore di logica e sintassi: dal momento che devo inserire un numero, dopo il prompt devo aggiungere il metodo parseInt
 function addNumbers() {
-    const userNumber = prompt(parseInt('Inserisci un numero'));
+    const userNumber = parseInt(prompt('Inserisci un numero'));
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);

@@ -24,14 +24,14 @@ for (let i = 0; i < 5; i++) {
 
 
 // ESERCIZIO 2
-// è una funzione che verifica se il numero che indico come parametro è un numero pari; se lo è, restituisco il numero più cinque
+// è una funzione che verifica se il numero che indico come parametro è un numero pari; se lo è, restituisco il numero più cinque; se non è pari, restituisco il numero che ho passato
 // l'errore è di logica e di sintassi: dentro la condizione ci deve essere un'uguaglianza
 function addIfEven(num) {
     if (num % 2 === 0) {
         console.log('numero', num);
         return num + 5;
     }
-    //return num;
+    return num;
 }
 
 console.log('funzione', addIfEven(8));
